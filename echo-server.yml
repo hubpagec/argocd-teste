@@ -26,7 +26,7 @@ spec:
         - containerPort: 80
         resources:
           limits:
-            cpu: 100m
+            cpu: 70m
           requests:
             cpu: 50m
         env:
@@ -77,5 +77,5 @@ spec:
     kind: Deployment
     name: echoserver
   minReplicas: 1
-  maxReplicas: 10
+  maxReplicas: 5
   targetCPUUtilizationPercentage: 10
