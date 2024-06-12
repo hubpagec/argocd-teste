@@ -56,7 +56,8 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - http:
+  - host: echoserver.172.18.0.100.nip.io
+    http:
       paths:
       - path: /
         pathType: Prefix
